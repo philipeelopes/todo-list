@@ -1,0 +1,79 @@
+.todoList{
+  
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+
+
+.vazio{
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    font-size: 2.3em;
+    
+}
+
+.tarefa{
+  font-size: 0.4em;
+  font-weight: normal;
+}
+
+
+
+
+.listaScroll {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 10px;
+}
+
+/* largura */
+.listaScroll::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+/* fundo */
+.listaScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* barra */
+.listaScroll::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+ 
+}
+
+/* hover */
+.listaScroll::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+  
+}
+
+
+
+body.dark .vazio{
+color: aliceblue;
+}
+
+
+@media (max-width: 768px){
+
+  .vazio{
+   font-size: 1.2em;
+   font-weight: bold;
+  }
+
+  .tarefa{
+    font-size: 0.8em;
+    font-weight: lighter
+  }
+
+
+}

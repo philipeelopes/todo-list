@@ -1,0 +1,28 @@
+.home{
+    text-align: center;
+    padding: 40px;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.home h1{
+    margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width: 768px){
+
+    .home h1{
+        font-size: 1.3em;
+    }
+
+    .home p{
+        font-size: 1em;
+    }
+}

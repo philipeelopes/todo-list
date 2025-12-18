@@ -1,0 +1,21 @@
+import { Link } from "react-router-dom";
+import Styles from "./Menu.module.css";
+import { motion } from "framer-motion";
+
+export default function Menu() {
+     const isDark = document.body.classList.contains("dark");
+    return (
+        
+        <nav className={Styles.menu}>
+            <Link to="/" >Home</Link>
+            <Link to="/tarefas" >Tarefas</Link>
+            <Link to="/nova-tarefa" >Nova Tarefa</Link>
+
+            <button onClick={() => document.body.classList.toggle("dark")} className={Styles.buttonDark}>
+                Dark Mode
+            </button>
+
+
+        </nav>
+    );
+}
