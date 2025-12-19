@@ -73,12 +73,14 @@
   gap: 10px;
 
   min-width: 0;
+ max-width: 100%;
 }
 
 .label span {
    white-space: normal;
   word-break: break-word;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .checkbox {
@@ -88,64 +90,6 @@
 
 }
 
-.corner {
-  position: absolute;
-  width: 35%;
-  height: 35%;
-  border: 2px solid #e53935;
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
-
-.topLeft {
-  top: 0;
-  left: 0;
-  border-right: none;
-  border-bottom: none;
-}
-
-.topRight {
-  top: 0;
-  right: 0;
-  border-left: none;
-  border-bottom: none;
-}
-
-.bottomLeft {
-  bottom: 0;
-  left: 0;
-  border-right: none;
-  border-top: none;
-}
-
-.bottomRight {
-  bottom: 0;
-  right: 0;
-  border-left: none;
-  border-top: none;
-}
-
-
-.btnDelete:hover .topLeft {
-  top: -6px;
-  left: -6px;
-}
-
-.btnDelete:hover .topRight {
-  top: -6px;
-  right: -6px;
-}
-
-.btnDelete:hover .bottomLeft {
-  bottom: -6px;
-  left: -6px;
-}
-
-.btnDelete:hover .bottomRight {
-  bottom: -6px;
-  right: -6px;
-}
-
 
 
 
@@ -153,6 +97,9 @@
 
 @media (max-width: 768px) {
 
+.label span {
+  flex: 1;
+}
 
 
 }
