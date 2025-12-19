@@ -1,6 +1,5 @@
 .todoItem {
   display: flex;
-  justify-content: space-between;
   gap: 10px;
   align-items: center;
   background: #f7f7f7;
@@ -14,6 +13,8 @@
 
   animation: fadeIn 0.8s ease;
 
+  min-width: 0;
+
 }
 
 
@@ -23,16 +24,17 @@
 
 .todoItem:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
- 
+
 }
 
 @keyframes fadeIn {
-  from{
+  from {
     opacity: 0;
     transform: translate(10px);
   }
+
   to {
     opacity: 1;
     transform: translate(0);
@@ -57,6 +59,7 @@
   border-radius: 4px;
   transition: all 0.3s ease;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 .btnDelete:hover {
@@ -71,16 +74,21 @@
   display: flex;
   align-items: center;
   gap: 10px;
+ 
 
+  
   min-width: 0;
- max-width: 100%;
+
 }
 
 .label span {
    white-space: normal;
-  word-break: break-word;
+  word-break: normal;
   overflow-wrap: break-word;
-  max-width: 100%;
+  
+
+  
+
 }
 
 .checkbox {
@@ -97,9 +105,13 @@
 
 @media (max-width: 768px) {
 
-.label span {
-  flex: 1;
-}
+  .todoItem {
+    align-items: flex-start;
+  }
+
+  .btnDelete {
+    margin-top: 6px;
+  }
 
 
 }
