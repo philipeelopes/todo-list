@@ -153,10 +153,6 @@
 
 @media (max-width: 768px) {
 
- .label {
-  display: flex;
-  gap: 10px;
-  min-width: 0;
-}
+
 
 }
