@@ -154,10 +154,7 @@
 @media (max-width: 768px) {
 
 
- .label span {
-    overflow-wrap: break-word; /* troca ANYWHERE */
-    word-break: normal;
-  }
+
 
 
 }
