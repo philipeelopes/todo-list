@@ -114,6 +114,8 @@
   }
 
   .label {
+    display: inline-flex;
+    align-items: center;
     width: 100%;
     min-width: 0;
     display: block;
@@ -125,11 +127,27 @@
     word-break: normal;
   }
 
+    .checkbox {
+    margin-top: 2px; 
+    flex-shrink: 0;
+  }
+
   .btnDelete {
     margin-left: 0;
-    align-self: center;
+    align-self: flex-end;
     margin-top: 8px;
   }
 
+
+   @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 }
