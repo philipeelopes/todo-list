@@ -74,7 +74,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
- 
 
   
   min-width: 0;
@@ -105,13 +104,9 @@
 
 @media (max-width: 768px) {
 
-  .todoItem {
-    align-items: flex-start;
-  }
+ 
 
-  .btnDelete {
-    margin-top: 6px;
-  }
+  
 
 
 }
