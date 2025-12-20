@@ -86,6 +86,7 @@
   word-break: normal;
   overflow-wrap: break-word;
   
+  padding: 10px;
 
   
 
@@ -107,9 +108,19 @@
 
 .todoItem{
   margin: 6px;
+  align-items: stretch;
+
 }
 
+.btnDelete{
+  margin-left: 0;
+  align-self: center;
+  margin-top: 8px;
+}
+
+
   .label{
+    width: 100%;
     gap: 0px;
   }
 
