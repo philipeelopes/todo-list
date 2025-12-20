@@ -106,23 +106,28 @@
 
 @media (max-width: 768px) {
 
-.todoItem{
-  flex-direction: column;
-  margin: 6px;
-  align-items: stretch;
-
-}
-
-.btnDelete{
-  margin-left: 0;
-  align-self: flex-end;
-  margin-top: 8px;
-}
-
-
-  .label{
+  .todoItem {
+    flex-direction: column;
+    margin: 6px;
+    align-items: stretch;
     width: 100%;
-    gap: 0px;
+  }
+
+  .label {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .label span {
+    width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+  }
+
+  .btnDelete {
+    margin-left: 0;
+    align-self: flex-end;
+    margin-top: 8px;
   }
 
 
