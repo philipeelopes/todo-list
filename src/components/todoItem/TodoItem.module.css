@@ -116,17 +116,18 @@
   .label {
     width: 100%;
     min-width: 0;
+    display: block;
   }
 
   .label span {
     width: 100%;
     overflow-wrap: anywhere;
-    word-break: break-all;
+    word-break: normal;
   }
 
   .btnDelete {
     margin-left: 0;
-    align-self: flex-end;
+    align-self: center;
     margin-top: 8px;
   }
 
