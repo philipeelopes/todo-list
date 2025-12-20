@@ -2,6 +2,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
+
   background: #f7f7f7;
   padding: 12px;
   border-radius: 6px;
@@ -81,9 +82,9 @@
 }
 
 .label span {
-   white-space: normal;
+  white-space: normal;
   word-break: normal;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   
 
   
@@ -108,7 +109,9 @@
   margin: 6px;
 }
 
-  
+  .label{
+    gap: 0px;
+  }
 
 
 }
