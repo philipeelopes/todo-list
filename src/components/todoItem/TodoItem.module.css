@@ -107,6 +107,7 @@
 @media (max-width: 768px) {
 
 .todoItem{
+  flex-direction: column;
   margin: 6px;
   align-items: stretch;
 
@@ -114,7 +115,7 @@
 
 .btnDelete{
   margin-left: 0;
-  align-self: center;
+  align-self: flex-end;
   margin-top: 8px;
 }
 
