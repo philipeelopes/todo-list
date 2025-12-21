@@ -84,7 +84,7 @@
 .label span {
   white-space: normal;
   word-break: normal;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   
   padding: 10px;
 
@@ -107,7 +107,7 @@
 @media (max-width: 768px) {
 
   .todoItem {
-    flex-direction: row;
+    flex-direction: column;
     margin: 6px;
     align-items: stretch;
     width: 100%;
