@@ -84,7 +84,7 @@
 .label span {
   white-space: normal;
   word-break: normal;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
   
   padding: 10px;
 
@@ -107,7 +107,7 @@
 @media (max-width: 768px) {
 
   .todoItem {
-    flex-direction: column;
+    flex-direction: row;
     margin: 6px;
     align-items: stretch;
     width: 100%;
@@ -118,7 +118,7 @@
     align-items: center;
     width: 100%;
     min-width: 0;
-    display: block;
+    
   }
 
   .label span {
@@ -134,7 +134,7 @@
 
   .btnDelete {
     margin-left: 0;
-    align-self: flex-end;
+    align-self: center;
     margin-top: 8px;
   }
 
