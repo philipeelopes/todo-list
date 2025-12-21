@@ -83,8 +83,9 @@
 
 .label span {
   white-space: normal;
-  word-break: normal;
+  word-break: break-word;
   overflow-wrap: break-word;
+  max-width: 100%;
   
   padding: 10px;
 
@@ -114,10 +115,13 @@
   }
 
   .label {
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
     width: 100%;
     min-width: 0;
-    display: block;
+   
     
   }
 
