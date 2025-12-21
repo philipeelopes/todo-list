@@ -114,10 +114,10 @@
   }
 
   .label {
-    display: inline-flex;
     align-items: center;
     width: 100%;
     min-width: 0;
+    display: block;
     
   }
 
