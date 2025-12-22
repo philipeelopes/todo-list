@@ -1,12 +1,13 @@
 .todoItem {
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 8px;
 
-  background: #f7f7f7;
-  padding: 12px;
+
+  padding: 10px 8px;
   border-radius: 6px;
-  margin: 10px;
+  margin: 8px;
+
 
   background: var(--card);
   border-right: 2px solid var(--primary);
@@ -19,29 +20,42 @@
 }
 
 
-
-
-
-
 .todoItem:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
-
 }
+
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate(10px);
   }
 
   to {
     opacity: 1;
-    transform: translate(0);
   }
 }
 
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+
+  min-width: 0;
+ 
+}
+
+.text {
+
+  min-width: 0;
+
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  padding: 0;
+}
 
 
 .feito {
@@ -51,55 +65,64 @@
 
 }
 
-.btnDelete {
-  background: crimson;
-  color: white;
-  border: none;
-  padding: 10px 14px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-  margin-left: auto;
-}
-
-.btnDelete:hover {
-  background: darkred;
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-
-
-
 .label {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-
-  
   min-width: 0;
-
 }
 
+
 .label span {
- 
+  
   min-width: 0;
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
   padding: 10px;
-
-  
-
 }
+
 
 .checkbox {
   flex-shrink: 0;
   cursor: pointer;
+   margin: 5px;
   accent-color: var(--primary);
   transform: scale(1.2);
+  
 
 }
+
+
+
+.btnDelete {
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 4px;
+
+  padding: 10px 14px;
+  cursor: pointer;
+
+  flex-shrink: 0;
+  margin-left: auto;
+
+  transition: all 0.3s ease;
+}
+
+.btnDelete:hover {
+  background: darkred;
+  transform: scale(1.1);
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -110,29 +133,14 @@
 
   .todoItem {
     flex-direction: column;
-    margin: 6px;
     align-items: stretch;
     width: 100%;
+    margin: 6px;
   }
 
   .label {
-    display: flex;
-    align-items: flex-start;
     width: 100%;
-    gap: 8px;
-    width: 100%;
-    min-width: 0;
-   
-    
-  }
 
-  .label span {
-    word-break: normal;
-  }
-
-    .checkbox {
-    margin-top: 2px; 
-    flex-shrink: 0;
   }
 
   .btnDelete {
@@ -142,13 +150,15 @@
   }
 
 
-   @keyframes fadeIn {
-    from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+  .label span {
+    word-break: normal;
   }
 
+  .checkbox {
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+
 }
-}
+
