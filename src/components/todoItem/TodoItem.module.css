@@ -28,26 +28,27 @@
 }
 
 .content {
-  display: flex;
+  flex: 1;
   align-items: flex-start;
   gap: 6px;
   min-width: 0;
-  max-width: 100%;
+  width: 100%;
   overflow: visible;
   box-sizing: border-box;
  
 }
 
 .text {
+  flex: 1;
   min-width: 0;
   display: inline-block; 
   white-space: normal;
   overflow-wrap: break-word;
-  word-break: break-all;
+  word-break: break-word;
   padding: 0;
-  max-width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
+  
+  
+  
   -webkit-hyphens: auto;
   hyphens: auto;
 }
