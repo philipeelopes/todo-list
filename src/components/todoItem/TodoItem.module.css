@@ -1,6 +1,6 @@
 .todoItem {
   display: flex;
-  align-items: center; 
+  align-items: center;
   padding: 10px 8px;
   border-radius: 6px;
   margin: 8px;
@@ -10,7 +10,8 @@
   animation: fadeIn 0.8s ease;
   min-width: 0;
   max-width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
+  box-sizing: border-box; /* Garante que padding não cause overflow */
 }
 
 .todoItem:hover {
@@ -33,9 +34,9 @@
   align-items: flex-start;
   gap: 6px;
   min-width: 0;
-  flex-grow: 1;
-  
-
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .text {
@@ -43,10 +44,16 @@
   display: flex;
   white-space: normal;
   overflow-wrap: break-word;
-  word-break: break-word;
+  word-break: break-all; /* Força quebra agressiva em qualquer caractere */
   padding: 0;
   max-width: 100%;
   overflow: hidden;
+  box-sizing: border-box;
+  -webkit-hyphens: auto; /* Suporte específico para Safari */
+  hyphens: auto;
+  /* Opcional: Descomente para truncar texto longo com "..." em vez de quebrar */
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
 }
 
 .feito {
@@ -61,6 +68,7 @@
   margin: 5px;
   accent-color: var(--primary);
   transform: scale(1.2);
+  box-sizing: border-box;
 }
 
 .btnDelete {
@@ -73,14 +81,13 @@
   flex-shrink: 0;
   margin-left: auto;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .btnDelete:hover {
   background: darkred;
   transform: scale(1.1);
 }
-
-
 
 @media (max-width: 768px) {
   .todoItem {
@@ -89,29 +96,37 @@
     width: 100%;
     margin: 6px;
     max-width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .content {
     width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .text {
-    word-break: break-all;
+    word-break: break-all; /* Reforçado no mobile */
     overflow-wrap: break-word;
-    hyphens: auto; 
+    -webkit-hyphens: auto;
+    hyphens: auto;
     max-width: 100%;
     overflow: hidden;
+    box-sizing: border-box;
   }
 
   .btnDelete {
     margin-left: 0;
     align-self: center;
     margin-top: 8px;
+    box-sizing: border-box;
   }
 
   .checkbox {
     margin-top: 2px;
     flex-shrink: 0;
+    box-sizing: border-box;
   }
 }

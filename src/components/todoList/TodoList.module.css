@@ -1,10 +1,15 @@
 .todoList{
   
-    list-style: none;
-    padding: 0;
-    
-    
+   /* Classe para a <ul> */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  overflow: hidden; /* Crucial para conter os itens */
+  box-sizing: border-box;
 }
+
 
 
 
