@@ -1,16 +1,17 @@
 .todoItem {
   display: flex;
   align-items: center;
-  padding: 10px 8px;
+  justify-content: space-between;
+  padding: 10px;
   border-radius: 6px;
-  margin: 8px 0;
+  margin: 10px;
   background: var(--card);
   border-right: 2px solid var(--primary);
   border-left: 2px solid var(--primary);
   animation: fadeIn 0.8s ease;
   min-width: 0;
   max-width: 100%;
-  overflow: hidden;
+  overflow: visible;
   box-sizing: border-box;
   width: 100%;
 }
@@ -32,7 +33,7 @@
   gap: 6px;
   min-width: 0;
   max-width: 100%;
-  overflow: hidden;
+  overflow: visible;
   box-sizing: border-box;
  
 }
@@ -74,7 +75,7 @@
   padding: 10px 14px;
   cursor: pointer;
   flex-shrink: 0;
-  margin-left: auto;
+
   transition: all 0.3s ease;
   box-sizing: border-box;
 }

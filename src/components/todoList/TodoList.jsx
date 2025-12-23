@@ -7,7 +7,8 @@ import { p } from "framer-motion/client";
 
 export default function TodoList({ todos, onToggle, onDelete, onAdd }) {
     return(
-        <ul className={`Styles.todoList ${Styles.listaScroll}`}>
+       <ul className={`${Styles.todoList} ${Styles.listaScroll}`}>
+
             {todos.length === 0 && <h1 className={Styles.vazio}>Nenhuma tarefa adicionada <p className={Styles.tarefa}>Comece criando sua primeira tarefa para organizar seu dia.</p></h1>  
 
             }
