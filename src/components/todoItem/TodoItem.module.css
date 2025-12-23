@@ -3,7 +3,7 @@
   align-items: center;
   padding: 10px 8px;
   border-radius: 6px;
-  margin: 8px 0; /* Reduzido para evitar overflow lateral */
+  margin: 8px 0;
   background: var(--card);
   border-right: 2px solid var(--primary);
   border-left: 2px solid var(--primary);
@@ -12,7 +12,7 @@
   max-width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  width: 100%; /* Garante que ocupe a largura total do pai */
+  width: 100%;
 }
 
 .todoItem:hover {
@@ -34,13 +34,12 @@
   max-width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  flex: 1; /* Permite expansão, mas com limites */
+ 
 }
 
 .text {
   min-width: 0;
-  /* Removido: display: flex; – causa problemas no Safari */
-  display: inline-block; /* Comportamento normal para texto em label */
+  display: inline-block; 
   white-space: normal;
   overflow-wrap: break-word;
   word-break: break-all;
@@ -90,7 +89,7 @@
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    margin: 4px 0; /* Margem vertical menor para evitar overflow */
+    margin: 4px 0;
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;

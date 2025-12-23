@@ -1,12 +1,12 @@
 .todoList{
   
-   /* Classe para a <ul> */
+  
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0;
   list-style: none;
-  overflow: hidden; /* Crucial para conter os itens */
+  overflow: hidden; 
   box-sizing: border-box;
   max-width: 100%; 
 }
