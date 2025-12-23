@@ -1,24 +1,16 @@
 .todoItem {
   display: flex;
-  align-items: center;
-  gap: 8px;
-
-
+  align-items: center; /* Adicionado para alinhar melhor no desktop */
   padding: 10px 8px;
   border-radius: 6px;
   margin: 8px;
-
-
   background: var(--card);
   border-right: 2px solid var(--primary);
   border-left: 2px solid var(--primary);
-
   animation: fadeIn 0.8s ease;
-
   min-width: 0;
-
+  overflow: hidden; /* Previne overflow horizontal */
 }
-
 
 .todoItem:hover {
   transform: translateY(-2px);
@@ -26,12 +18,10 @@
   transition: all 0.5s ease;
 }
 
-
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -41,108 +31,68 @@
   display: flex;
   align-items: flex-start;
   gap: 6px;
-
   min-width: 0;
-
-  
- 
+  flex: 1; /* Garante que ocupe o espaço disponível */
 }
 
 .text {
-
   min-width: 0;
-
+  display: flex;
   white-space: normal;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   word-break: break-word;
-
   padding: 0;
+  flex: 1; /* Permite que o texto expanda e quebre */
 }
-
 
 .feito {
   text-decoration: line-through;
   opacity: 0.6;
   transition: all 0.3s ease;
-
 }
-
-.label {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  min-width: 0;
-}
-
-
-.label span {
-  
-  min-width: 0;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  padding: 10px;
-}
-
 
 .checkbox {
   flex-shrink: 0;
   cursor: pointer;
-   margin: 5px;
+  margin: 5px;
   accent-color: var(--primary);
   transform: scale(1.2);
-  
-
 }
-
-
 
 .btnDelete {
   background: crimson;
   color: white;
   border: none;
   border-radius: 4px;
-
   padding: 10px 14px;
   cursor: pointer;
-
   flex-shrink: 0;
   margin-left: auto;
-
   transition: all 0.3s ease;
 }
 
 .btnDelete:hover {
   background: darkred;
   transform: scale(1.1);
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
-
   .todoItem {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
     margin: 6px;
+    overflow: hidden; /* Reforça no mobile */
   }
 
-  .label {
+  .content {
     width: 100%;
+  }
 
+  .text {
+    word-break: break-word; /* Garante quebra no mobile */
+    overflow-wrap: break-word;
+    hyphens: auto; /* Adicionado para melhor suporte em Safari */
   }
 
   .btnDelete {
@@ -151,16 +101,8 @@
     margin-top: 8px;
   }
 
-
-  .label span {
-    word-break: normal;
-  }
-
   .checkbox {
     margin-top: 2px;
     flex-shrink: 0;
   }
-
-
 }
-
