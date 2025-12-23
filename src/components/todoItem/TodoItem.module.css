@@ -1,6 +1,6 @@
 .todoItem {
   display: flex;
-  align-items: center; /* Adicionado para alinhar melhor no desktop */
+  align-items: center; 
   padding: 10px 8px;
   border-radius: 6px;
   margin: 8px;
@@ -9,7 +9,8 @@
   border-left: 2px solid var(--primary);
   animation: fadeIn 0.8s ease;
   min-width: 0;
-  overflow: hidden; /* Previne overflow horizontal */
+  max-width: 100%;
+  overflow: hidden; 
 }
 
 .todoItem:hover {
@@ -32,7 +33,9 @@
   align-items: flex-start;
   gap: 6px;
   min-width: 0;
-  flex: 1; /* Garante que ocupe o espaço disponível */
+  flex-grow: 1;
+  
+
 }
 
 .text {
@@ -42,7 +45,8 @@
   overflow-wrap: break-word;
   word-break: break-word;
   padding: 0;
-  flex: 1; /* Permite que o texto expanda e quebre */
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .feito {
@@ -76,13 +80,16 @@
   transform: scale(1.1);
 }
 
+
+
 @media (max-width: 768px) {
   .todoItem {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
     margin: 6px;
-    overflow: hidden; /* Reforça no mobile */
+    max-width: 100%;
+    overflow: hidden; 
   }
 
   .content {
@@ -90,9 +97,11 @@
   }
 
   .text {
-    word-break: break-word; /* Garante quebra no mobile */
+    word-break: break-all;
     overflow-wrap: break-word;
-    hyphens: auto; /* Adicionado para melhor suporte em Safari */
+    hyphens: auto; 
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .btnDelete {
