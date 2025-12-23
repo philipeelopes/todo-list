@@ -8,6 +8,7 @@
   list-style: none;
   overflow: hidden; /* Crucial para conter os itens */
   box-sizing: border-box;
+  max-width: 100%; 
 }
 
 

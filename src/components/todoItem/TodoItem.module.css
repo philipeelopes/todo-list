@@ -3,7 +3,7 @@
   align-items: center;
   padding: 10px 8px;
   border-radius: 6px;
-  margin: 8px;
+  margin: 8px 0; /* Reduzido para evitar overflow lateral */
   background: var(--card);
   border-right: 2px solid var(--primary);
   border-left: 2px solid var(--primary);
@@ -11,7 +11,8 @@
   min-width: 0;
   max-width: 100%;
   overflow: hidden;
-  box-sizing: border-box; /* Garante que padding não cause overflow */
+  box-sizing: border-box;
+  width: 100%; /* Garante que ocupe a largura total do pai */
 }
 
 .todoItem:hover {
@@ -21,12 +22,8 @@
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .content {
@@ -37,23 +34,22 @@
   max-width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+  flex: 1; /* Permite expansão, mas com limites */
 }
 
 .text {
   min-width: 0;
-  display: flex;
+  /* Removido: display: flex; – causa problemas no Safari */
+  display: inline-block; /* Comportamento normal para texto em label */
   white-space: normal;
   overflow-wrap: break-word;
-  word-break: break-all; /* Força quebra agressiva em qualquer caractere */
+  word-break: break-all;
   padding: 0;
   max-width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  -webkit-hyphens: auto; /* Suporte específico para Safari */
+  -webkit-hyphens: auto;
   hyphens: auto;
-  /* Opcional: Descomente para truncar texto longo com "..." em vez de quebrar */
-  /* white-space: nowrap; */
-  /* text-overflow: ellipsis; */
 }
 
 .feito {
@@ -94,7 +90,7 @@
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    margin: 6px;
+    margin: 4px 0; /* Margem vertical menor para evitar overflow */
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
@@ -108,7 +104,7 @@
   }
 
   .text {
-    word-break: break-all; /* Reforçado no mobile */
+    word-break: break-all;
     overflow-wrap: break-word;
     -webkit-hyphens: auto;
     hyphens: auto;
