@@ -114,6 +114,14 @@
     box-sizing: border-box;
   }
 
+    .checkbox {
+    transform: none;       /* remove scale */
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    align-self: flex-start;
+  }
+
   .btnDelete {
     margin-left: 0;
     align-self: center;
