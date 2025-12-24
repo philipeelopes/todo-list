@@ -31,7 +31,7 @@
 
 
 .listaScroll {
-  max-height: 500px;
+  max-height: 50vh;
   overflow-y: auto;
   overflow-x: hidden;
   margin: 10px;
@@ -84,6 +84,14 @@ color: aliceblue;
     font-size: 0.8em;
     font-weight: lighter
   }
+
+   .listaScroll {
+    max-height: none; /* REMOVE o limite fixo */
+    
+    overflow-y: auto;
+     -webkit-overflow-scrolling: touch;
+  }
+
 
 
 }

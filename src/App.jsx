@@ -6,6 +6,7 @@ import Menu from "./components/Menu/Menu";
 import Home from "./pages/Home";
 import Tarefas from "./pages/Tarefas";
 import NovaTarefa from "./pages/NovaTarefa";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   const [dark, setDark] = useState(false);
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/nova-tarefa" element={<NovaTarefa />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );
