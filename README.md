@@ -1,3 +1,9 @@
+![React](https://img.shields.io/badge/React-18-blue)
+![Vite](https://img.shields.io/badge/Vite-⚡-purple)
+![Status](https://img.shields.io/badge/status-finalizado-success)
+
+
+
 # 📝 Todo List - React
 
 Aplicação de lista de tarefas desenvolvida com React, focada em organização, produtividade e responsividade.
