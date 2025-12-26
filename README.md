@@ -43,7 +43,7 @@ Aplicação de lista de tarefas desenvolvida com React, focada em organização,
 git clone https://github.com/philipeelopes/todo-list.git
 
 # Entre na pasta
-cd NOME_DO_REPO
+cd todo-list
 
 # Instale as dependências
 npm install
