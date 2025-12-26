@@ -28,10 +28,12 @@ Aplicação de lista de tarefas desenvolvida com React, focada em organização,
 ![Home Desktop](public/screenshots/desktop/home.png)
 ![Lista Desktop](public/screenshots/desktop/tarefas.png)
 ![Dark Mode](public/screenshots/desktop/darkmode.png)
+![Dark Mode](public/screenshots/desktop/listaDeTarefas.png)
 
 ### Mobile
 ![Home Mobile](public/screenshots/mobile/home.png)
-![Lista Mobile](public/screenshots/mobile/tarefas.png)
+![Lista Mobile](public/screenshots/mobile/tarefasmobile.png)
+![Lista Mobile](public/screenshots/mobile/listadetarefasmobile.png)
 ---
 
 ## 🛠️ Tecnologias utilizadas
