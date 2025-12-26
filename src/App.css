@@ -211,6 +211,11 @@ body.dark .appContainer {
 
   .appContainer {
     background-size: 600% 600%;
+    
+  }
+
+  .pageContainer{
+    height: 100svh;
   }
 
   body.dark .appContainer {
