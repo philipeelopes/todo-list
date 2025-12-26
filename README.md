@@ -17,11 +17,11 @@ Aplicação de lista de tarefas desenvolvida com React, focada em organização,
 
 ## 🖼️ Preview
 
-### Desktop
-![Desktop](./images/desktop.png)
+### 💻 Desktop
+![Todo List Desktop](public/screenshots/desktop.png)
 
-### Mobile
-![Mobile](./images/mobile.png)
+### 📱 Mobile
+![Todo List Mobile](public/screenshots/mobile.png)
 
 ---
 
