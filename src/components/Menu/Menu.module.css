@@ -92,15 +92,14 @@
   padding: 2% 4%;
 
   display: flex;
-  align-items:  center;
+  align-items: center;
   justify-content: space-between;
   gap: 10px;
 }
 
 .menu a{
- 
-
-  font-size: 0.8em;
+  
+  font-size: 1em;
   width: 25%;
   
 }
