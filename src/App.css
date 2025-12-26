@@ -213,7 +213,9 @@ body.dark .appContainer {
     background-size: 600% 600%;
   }
 
- 
+    .container {
+    min-height: 100dvh;
+  }
 
 
  
