@@ -119,27 +119,51 @@ body {
 
 }
 
+
 @media print {
+   * {
+    animation: none !important;
+    transition: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border:  none !important;
+  }
+
+  body {
+    background: white !important;
+    overflow: visible !important;
+  }
+
+  .appContainer {
+    background: none !important;
+    height: auto !important;
+  }
+
+  .pageContainer,
+  .container {
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  /* só a lista aparece */
   body * {
     visibility: hidden;
-
   }
 
   .listaPDF,
   .listaPDF * {
     visibility: visible;
-
   }
 
   .listaPDF {
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: static;
     width: 100%;
   }
 
-  button {
-    display: none;
+  button,
+  footer,
+  nav {
+    display: none !important;
   }
 }
 
