@@ -115,7 +115,7 @@ body {
 
   border: none;
   box-shadow: 0 0 5px rgba(107, 99, 255, 0.452);
-   overflow: hidden; 
+   overflow: visible; 
 
 }
 
@@ -211,11 +211,14 @@ body.dark .appContainer {
 
   .appContainer {
     background-size: 600% 600%;
+     min-height: 100dvh;
+    height: auto;
     
   }
 
   .pageContainer{
-    height: 100svh;
+    overflow: visible;
+    min-height: auto;
   }
 
   body.dark .appContainer {
